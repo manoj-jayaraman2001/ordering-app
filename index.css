@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+body {
+    margin: 0;
+    background: #F5F5F5;
+    font-family: 'Smythe', cursive, sans-serif;
+} 
+
+.main{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+}
+/* header */
+h1{
+    /* margin-bottom: 8px; */
+    font-size: 39px;
+}
+p{
+    /* margin-top: 8px; */
+    font-size: 23px;
+}
+header{
+    max-width: 600px;
+    height: 170px;
+    background-image: url(images/header-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+/* food section */
+#food-menu{
+    padding: 45px;
+   
+}
+
+.food{
+    /* margin-top: 45px; */
+    max-width: 500px;
+    height: 140px;
+    display: flex;
+    border-bottom: 2px solid #8B8B8B;
+}
+.food-desc{
+    font-weight: 400;
+}
+.food-desc p{
+    font-size: 16px;
+    color: #8B8B8B;
+}
+.food-desc h2{
+    font-size: 20px;
+}
+.food-desc h1{
+    font-size: 28px;
+}
+
+.emoji{
+    font-size: 80px;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.add-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #8B8B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: auto 0 auto auto;
+}
+.add-btn p{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/* your order */
+#order{
+    /* position: relative; */
+    display: none;
+    padding: 45px;
+}
+#order-heading{
+    text-align: center;
+    margin: 0;
+}
+#order .remove{
+    font-size: 18px;
+    /* line-height: normal; */
+    cursor: pointer;
+    margin-left: 10px;
+    color: #8B8B8B;
+}
+#order .remove:hover{
+    
+    color: red;
+}
+
+
+.orders-list{
+    margin: 0;
+    padding: 0 45px;
+}
+.order-item{
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 40px;
+    
+}
+
+/* pricing section */
+.price{
+    margin-left: auto;
+}
+
+hr{
+   border-top:  2px solid #8B8B8B;
+}
+
+#total-price{
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+button{
+    cursor: pointer;
+    background: #16DB99;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 60px;;
+    color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+    margin: 50px 0; 
+}
+
+button:active{
+    transform: translateY(4px);
+}
+
+
+/* Payment section */
+
+#payment-modal{
+    display: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    position: fixed;
+    background-color: white;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    margin: auto;
+    height: 450px;
+    max-width: 400px;
+    padding: 25px;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    width: 370px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: 1.3px solid #757575;
+    border-radius: 3px;
+    text-shadow: 0 0 2px black;
+}
+#payment-modal button{
+    margin-top: 0;
+}
+#payment-modal h1{
+    font-size: 24px;
+}
+
+#msg{
+    display: none;
+    max-width: 500px;
+    height: 60px;
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 30px 0; 
+}
+#msg p{
+    margin: auto;
+}
